@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html data-html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>backdrop_data</title>
+	<style></style>
+	<link href="../../styles/tabula_rasa.css" rel="stylesheet" />
+	<script></script>
+</head>
+<body data-body>
+	<button id="openBtn">Open Dialog</button>
+
+	<dialog data-backdrop id="myDialog">
+		<p>This is a dialog with a backdrop.</p>
+		<button id="closeBtn">Close</button>
+	</dialog>
+
+	<script>
+		const dialog = document.getElementById('myDialog');
+		const openBtn = document.getElementById('openBtn');
+		const closeBtn = document.getElementById('closeBtn');
+
+		openBtn.addEventListener('click', () => {
+			dialog.showModal();
+		});
+
+		closeBtn.addEventListener('click', () => {
+			dialog.close();
+		});
+	</script>
+</body>
+</html>

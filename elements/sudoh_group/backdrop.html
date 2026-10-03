@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>backdrop</title>
+	<style></style>
+	<link href="#" rel="stylesheet" />
+	<script></script>
+</head>
+<body>
+	<button id="openBtn">Open Dialog</button>
+
+	<dialog id="myDialog">
+		<p>This is a dialog with a backdrop.</p>
+		<button id="closeBtn">Close</button>
+	</dialog>
+
+	<script>
+		const dialog = document.getElementById('myDialog');
+		const openBtn = document.getElementById('openBtn');
+		const closeBtn = document.getElementById('closeBtn');
+
+		openBtn.addEventListener('click', () => {
+			dialog.showModal();
+		});
+
+		closeBtn.addEventListener('click', () => {
+			dialog.close();
+		});
+	</script>
+</body>
+</html>

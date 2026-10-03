@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>slot</title>
+    <style></style>
+    <link href="#" rel="stylesheet" />
+    <script></script>
+</head>
+<body>
+    <template id="my-template">
+        <slot>Default content</slot>
+    </template>
+
+    <div id="container"></div>
+
+    <script>
+        const template = document.getElementById('my-template');
+        const clone = template.content.cloneNode(true);
+        document.getElementById('container').appendChild(clone);
+    </script>
+</body>
+</html>

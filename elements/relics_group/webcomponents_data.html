@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html data-html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>webcomponents_data</title>
+	<style></style>
+	<link href="../../styles/tabula_rasa.css" rel="stylesheet" />
+	<script></script>
+</head>
+<body data-body>
+	<element data-element name="x-example" extends="div">
+		<template>
+			<content data-content></content>
+		</template>
+	</element>
+
+	<content data-content select=".title"></content>
+
+	<shadow data-shadow></shadow>
+
+	<x-example>Custom element content</x-example>
+</body>
+</html>

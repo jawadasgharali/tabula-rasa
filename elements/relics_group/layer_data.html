@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html data-html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>layer_data</title>
+	<style></style>
+	<link href="../../styles/tabula_rasa.css" rel="stylesheet" />
+	<script></script>
+</head>
+<body data-body>
+	<layer data-layer top="100" left="50">
+		<p>This is an absolute layer floating over the page.</p>
+	</layer>
+
+	<p>
+		This text is normal,
+		<ilayer data-ilayer left="20">this text is pushed right</ilayer>,
+		and this text continues normally.
+	</p>
+
+	<nolayer data-nolayer>
+		<p>Your browser does not support Netscape layers. Please download Netscape Navigator 4.0!</p>
+	</nolayer>
+</body>
+</html>

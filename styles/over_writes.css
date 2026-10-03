@@ -1,0 +1,145 @@
+@charset "utf-8";
+
+/*	over_writes.css
+___________________________________________________________________________________________________________________________________________________________________________________________ */
+
+/*	prism.js
+=========================================================================================================================================================================================== */
+
+/*	tab size
+-------------------------------------------------------------------------------------------- */
+code[class*="language-"], pre[class*="language-"] {
+	tab-size: 2;
+	overflow-x: scroll;
+}
+
+/*	Notepad++ style overrides for HTML, CSS, JS
+=========================================================================================================================================================================================== */
+
+/* Make ALL text in CSS code blocks BLUE by default, then override */
+code[class*="language-css"],
+pre[class*="language-css"] {
+	color: #0000FF !important;
+}
+
+/* Comments - Green (#008000) */
+code[class*="language-"] .token.comment,
+pre[class*="language-"] .token.comment,
+code[class*="language-"] .token.prolog,
+pre[class*="language-"] .token.prolog,
+code[class*="language-"] .token.doctype,
+pre[class*="language-"] .token.doctype,
+code[class*="language-"] .token.cdata,
+pre[class*="language-"] .token.cdata {
+	color: #008000 !important;
+}
+
+/* HTML Tags - Maroon (#800000) */
+code[class*="language-"] .token.tag,
+pre[class*="language-"] .token.tag {
+	color: #800000 !important;
+}
+
+/* Tag punctuation - Maroon (#800000) */
+code[class*="language-"] .token.tag .token.punctuation,
+pre[class*="language-"] .token.tag .token.punctuation {
+	color: #800000 !important;
+}
+
+/* HTML Attribute Names - Red (#FF0000) */
+code[class*="language-"] .token.attr-name,
+pre[class*="language-"] .token.attr-name {
+	color: #FF0000 !important;
+}
+
+/* HTML Attribute Values (strings) - Blue (#0000FF) */
+code[class*="language-"] .token.attr-value,
+pre[class*="language-"] .token.attr-value,
+code[class*="language-"] .token.string,
+pre[class*="language-"] .token.string {
+	color: #0000FF !important;
+}
+
+/* HTML Entities - Orange (#FF8000) */
+code[class*="language-"] .token.entity,
+pre[class*="language-"] .token.entity {
+	color: #FF8000 !important;
+}
+
+/* CSS Selectors - Maroon (#800000) - OVERRIDE the blue default */
+code[class*="language-"] .token.selector,
+pre[class*="language-"] .token.selector {
+	color: #800000 !important;
+}
+
+/* CSS Properties - Red (#FF0000) - OVERRIDE the blue default */
+code[class*="language-"] .token.property,
+pre[class*="language-"] .token.property {
+	color: #FF0000 !important;
+}
+
+/* CSS Important - Orange (#FF8000) */
+code[class*="language-"] .token.important,
+pre[class*="language-"] .token.important {
+	color: #FF8000 !important;
+	font-weight: normal !important;
+}
+
+/* Punctuation - Black (#000000) - OVERRIDE the blue default */
+code[class*="language-"] .token.punctuation,
+pre[class*="language-"] .token.punctuation {
+	color: #800000 !important;
+}
+
+/* JavaScript Keywords - Blue Bold (#0000FF) */
+code[class*="language-"] .token.keyword,
+pre[class*="language-"] .token.keyword {
+	color: #0000FF !important;
+	font-weight: bold !important;
+}
+
+/* JavaScript Numbers - Red (#FF0000) */
+code[class*="language-"] .token.number,
+pre[class*="language-"] .token.number {
+	color: #FF0000 !important;
+}
+
+/* JavaScript Operators - Dark Blue (#000080) */
+code[class*="language-"] .token.operator,
+pre[class*="language-"] .token.operator {
+	color: #000080 !important;
+}
+
+/* JavaScript Functions - Purple (#8000FF) */
+code[class*="language-"] .token.function,
+pre[class*="language-"] .token.function {
+	color: #8000FF !important;
+}
+
+/* JavaScript Variables - Black (#000000) */
+code[class*="language-"] .token.variable,
+pre[class*="language-"] .token.variable {
+	color: #000000 !important;
+}
+
+/* JavaScript Boolean - Blue Bold (#0000FF) */
+code[class*="language-"] .token.boolean,
+pre[class*="language-"] .token.boolean {
+	color: #0000FF !important;
+	font-weight: bold !important;
+}
+
+/* JavaScript Null/Undefined - Blue Bold (#0000FF) */
+code[class*="language-"] .token.null,
+pre[class*="language-"] .token.null,
+code[class*="language-"] .token.undefined,
+pre[class*="language-"] .token.undefined {
+	color: #0000FF !important;
+	font-weight: bold !important;
+}
+
+/* Plain text - Keep as default (blue for CSS, black for others) */
+code[class*="language-"] .token.plain,
+pre[class*="language-"] .token.plain {
+	color: inherit !important;
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>webcomponents</title>
+	<style></style>
+	<link href="#" rel="stylesheet" />
+	<script></script>
+</head>
+<body>
+	<!-- element: define custom element -->
+	<element name="x-example" extends="div">
+		<template>
+			<content></content>
+		</template>
+	</element>
+
+	<!-- content: insertion point -->
+	<content select=".title"></content>
+
+	<!-- shadow: shadow root -->
+	<shadow></shadow>
+
+	<!-- Use the custom element -->
+	<x-example>Custom element content</x-example>
+</body>
+</html>

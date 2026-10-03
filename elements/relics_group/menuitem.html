@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>menuitem</title>
+	<style></style>
+	<link href="#" rel="stylesheet" />
+	<script></script>
+</head>
+<body>
+	<menu type="context" id="myMenu">
+		<menuitem label="Refresh" onclick="alert('Refreshed!')">
+		<menuitem label="Save" onclick="alert('Saved!')">
+	</menu>
+	<p>Right-click anywhere to see the custom menu item.</p>
+	<script>
+		document.body.setAttribute('contextmenu', 'myMenu');
+	</script>
+</body>
+</html>
